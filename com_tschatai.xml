@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+    <name>com_tschatai</name>
+    <author>Your Name</author>
+    <creationDate>2024-03</creationDate>
+    <copyright>(C) 2024 Your Name. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
+    <version>1.0.0</version>
+    <namespace path="src">YourNamespace\Component\TSChatAI</namespace>
+    <description>COM_TSCHATAI_XML_DESCRIPTION</description>
+
+    <files folder="site">
+        <folder>src</folder>
+        <folder>tmpl</folder>
+        <folder>services</folder>
+        <filename>tschatai.php</filename>
+    </files>
+
+    <media folder="media" destination="com_tschatai">
+        <folder>css</folder>
+        <folder>js</folder>
+        <filename>joomla.asset.json</filename>
+    </media>
+
+    <administration>
+        <menu>COM_TSCHATAI</menu>
+        <submenu>
+            <!-- Add submenu items if needed -->
+        </submenu>
+        <files folder="admin">
+            <folder>services</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+            <filename>tschatai.php</filename>
+        </files>
+    </administration>
+
+    <plugins>
+        <plugin name="tschatai" group="system">
+            <files folder="plugins/system/tschatai">
+                <folder>src</folder>
+                <filename plugin="tschatai">tschatai.php</filename>
+                <filename>tschatai.xml</filename>
+            </files>
+        </plugin>
+    </plugins>
+</extension> 
